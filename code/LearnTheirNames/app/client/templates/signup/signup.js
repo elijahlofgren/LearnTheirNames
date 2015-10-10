@@ -9,6 +9,8 @@ Template.Signup.events({
         Accounts.createUser({
             email: email,
             password: password
+        }, function(error) {
+            alert("Error: " + error);
         });
     }
     
