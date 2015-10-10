@@ -10,7 +10,7 @@ Template.Login.events({
             if (error) {
             alert("Login error: " + error.reason);
             } else { 
-                Router.go("home");   
+                Router.go("home");
             }
         });
     }

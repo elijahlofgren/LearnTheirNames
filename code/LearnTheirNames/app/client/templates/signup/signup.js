@@ -10,10 +10,14 @@ Template.Signup.events({
             email: email,
             password: password
         }, function(error) {
-            alert("Error: " + error);
+            if (error) {
+                alert("Error: " + error);
+            } else {
+                Router.go("home");   
+            }
         });
     }
-    
+
 });
 
 /*****************************************************************************/
