@@ -1,7 +1,11 @@
 <template name="Home">
     <ul>
+        {{#if currentUser}}
+        <li><a href="/review">Review</a></li>
+        {{else}}
         <li><a href="/signup">Sign Up</a></li>
         <li><a href="/login">Login</a></li>
+        {{/if}}
     </ul>
     <div class="home">
         <h1>Welcome to Learn Their Names!</h1>
