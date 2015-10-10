@@ -10,3 +10,9 @@ Router.route('/review', {
   controller: 'ReviewController',
   where: 'client'
 });
+
+Router.route('/signup', {
+  name: 'signup',
+  controller: 'SignupController',
+  where: 'client'
+});
