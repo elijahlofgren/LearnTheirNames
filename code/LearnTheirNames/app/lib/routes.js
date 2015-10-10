@@ -4,3 +4,9 @@ Router.route('/', {
   controller: 'HomeController',
   where: 'client'
 });
+
+Router.route('/review', {
+  name: 'review',
+  controller: 'ReviewController',
+  where: 'client'
+});
