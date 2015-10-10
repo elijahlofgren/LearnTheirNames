@@ -16,3 +16,9 @@ Router.route('/signup', {
   controller: 'SignupController',
   where: 'client'
 });
+
+Router.route('/login', {
+  name: 'login',
+  controller: 'LoginController',
+  where: 'client'
+});
