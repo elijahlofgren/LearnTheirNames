@@ -1,5 +1,21 @@
 <template name="Review">
-  <div class="review">
-    <h1>Welcome to the review page</h1>
-  </div>
+    <div class="review">
+        <h1>Welcome to the review page</h1>
+
+
+
+        <h2>Current Names</h2>
+        <ul>
+            {{#each names}}
+            <li class="question">Who is {{description}}? <span style="display:none" class="answer">{{name}}</span>
+                {{#each names}}
+              <!--  <label> Enable once get $.closest() working -->
+                    <input type="checkbox" value="{{name}}" />
+                    {{name}}
+               <!-- </label> -->
+                {{/each}}
+            </li>
+            {{/each}}
+        </ul>
+    </div>
 </template>

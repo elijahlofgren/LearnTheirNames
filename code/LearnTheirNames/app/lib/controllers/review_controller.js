@@ -6,6 +6,7 @@ ReviewController = RouteController.extend({
   // this.subscribe('item', this.params._id).wait();
   
   subscriptions: function() {
+       this.subscribe("names", Meteor.userId());
   },
   
   // Subscriptions or other things we want to "wait" on. This also
@@ -23,6 +24,7 @@ ReviewController = RouteController.extend({
   // return Posts.findOne({_id: this.params._id});
   
   data: function () {
+        return Names.findOne({_id: this.params._id});
   },
   
   // You can provide any of the hook options
